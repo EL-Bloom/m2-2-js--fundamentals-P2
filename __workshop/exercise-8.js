@@ -7,9 +7,13 @@
 //
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
-function greet(list) {
-  // list is an array of strings
+function greet(list) { 
+  return list.map(function (x) { 
+    return `Hello ${x}`; 
+
+  }) ; 
 }
+console.log(greet(["David", "Billy", "Lisa", "Jennifer"]));
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)
 

@@ -8,9 +8,13 @@
 //
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
+
 function characterCount(string) {
-  // complete the function
-}
+ return string.length;
+
+}  
+console.log(characterCount("Hello there y o u"));
+
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)
 //

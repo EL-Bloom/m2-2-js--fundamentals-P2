@@ -8,10 +8,15 @@
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
 function keepLong(list) {
-  // list is an array of strings
+const array0 = ["Montreal", "Gotham", "USA ,"]; 
+let newArray = (array0 + list); 
+newArray = list.filter(function(NewArray) { 
+  return newArray.length >5;  
+});
+
+return newArray;
+
 }
-// -----------------------------------------------------------------
-// Edit only the code between the lines (above)
 
 console.log(
   keepLong(["Cyborg", "Robin", "Batman", "Superman", "Aquaman", "Flash"])
@@ -21,3 +26,23 @@ console.log(
 
 // This is needed for automated testing (more on that later)
 module.exports = keepLong;
+ 
+
+function keepLong(list) {
+
+  const longWords = list.filter(function (word) { 
+    console.log(word);
+    return word.length > 5;
+  });
+  return longWords;
+} 
+
+console.log(
+  keepLong(["Cyborg", "Robin", "Batman", "Superman", "Aquaman", "Flash"])
+);
+// -----------------------------------------------------------------
+// Edit only the code between the lines (above)
+
+console.log(
+  keepLong(["Cyborg", "Robin", "Batman", "Superman", "Aquaman", "Flash"])
+);

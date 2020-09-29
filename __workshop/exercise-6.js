@@ -8,8 +8,9 @@
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
 function removeEvens(list) {
-  // list is an array of numbers
-}
+  return list.filter(list => list % 2 === 0);
+} 
+console.log(removeEvens([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]));
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)
 

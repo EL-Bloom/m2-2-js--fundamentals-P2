@@ -15,9 +15,19 @@
 //
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
-function removeMiddleName(string) {
-  // complete the function
+function removeMiddleName(string) { 
+  const arrayName = string.split(" ");  
+  let lastArrayItem = "" 
+  let firstArrayItem = arrayName[0];
+  if (arrayName.length > 1) { 
+      lastArrayItem= arrayName[arrayName.length - 1]; 
+  }
+  return firstArrayItem + " " + lastArrayItem; 
 }
+ 
+
+
+console.log(removeMiddleName("hello world hello"));
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)
 //

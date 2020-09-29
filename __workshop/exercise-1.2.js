@@ -9,9 +9,14 @@
 //
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
-function arrOFNames(string) {
-  // complete the function
-}
+let numbers1 = "one,two,three";
+let total;
+function arrOFNames(numbers1) {
+   
+   total = numbers1.split(",");
+}    
+ console.log(total);
+
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)
 //

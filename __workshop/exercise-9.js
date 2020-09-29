@@ -8,9 +8,17 @@
 //
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
-function greetLong(list) {
-  // list is an array of strings
-}
+function greetLong(list) { 
+ const longNames = list.filter( function (names) { 
+   console.log(names); 
+   return names.length > 3;
+ }) 
+ return longNames.map( function(greet) { 
+   return `Hello ${greet}`;
+ })
+} 
+
+console.log(greetLong(["Scott", "Bob", "Ric", "Jim"]));
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)
 

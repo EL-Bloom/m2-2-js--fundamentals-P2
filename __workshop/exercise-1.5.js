@@ -12,9 +12,16 @@
 //
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
-function decodeMessage(string, notCode) {
-  // complete the function
-}
+function decodeMessage(string, notCode) { 
+  let message = string; 
+ for (let i=0; i < notCode.length; i++) { 
+   message = message.replace(notCode[i], "")
+ }
+  return message;
+}  
+ 
+
+console.log(decodeMessage("I anotm tbaconhe walrus.", ["not", "bacon"] ));
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)
 //

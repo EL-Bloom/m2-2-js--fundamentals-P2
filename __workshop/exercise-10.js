@@ -8,8 +8,11 @@
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
 function allLong(list) {
-  // list is an array of strings
-}
+    return list.every(function(abc){ 
+     return abc.length > 4;
+    });
+} 
+console.log(allLong(["Montreal", "Paris"]));
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)
 

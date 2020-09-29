@@ -10,8 +10,11 @@
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
 function removeStringFromArray(array, string) {
-  // complete the function
-}
+
+  return array.filter((newArray) => newArray !== string);
+}  
+
+console.log(removeStringFromArray(["I", "bacon", "you", "she"], "bacon"));
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)
 //

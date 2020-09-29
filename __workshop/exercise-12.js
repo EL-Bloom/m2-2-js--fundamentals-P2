@@ -13,8 +13,29 @@
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
 function getLetterGrade(grades) {
-  // grades is an array of numbers
-}
+    switch(true) {  
+      case (grades > 89) :  
+      console.log("A"); 
+      break; 
+      case (grades > 79):   
+      console.log("B"); 
+      break;   
+
+      case  (grades > 69) :   
+      console.log("C"); 
+      break;  
+
+      case (grades > 59):   
+      console.log("D"); 
+      break;  
+
+      default :   
+        console.log("F"); 
+        break;  
+    } 
+
+} 
+console.log(getLetterGrade([9]));
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)
 

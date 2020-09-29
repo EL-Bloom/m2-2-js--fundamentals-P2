@@ -5,9 +5,21 @@
 //
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
+const myArray = [
+  "bacon",
+  "purple",
+  "door",
+  "window",
+  "exist",
+  "code",
+  "program",
+  "funky",
+];
+
 function itemIsPresent(array, item) {
-  // code here
-}
+  return array.includes(item);
+} 
+console.log(itemIsPresent(myArray, "funky"));
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)
 //

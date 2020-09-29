@@ -7,10 +7,13 @@
 //
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
+let fullName = "Ellie Lefebvre"; 
+let number;
 function countNames(fullName) {
-  // complete the function
-  return fullName.split(" ");
-}
+ 
+ number = fullName.split(" ");
+} 
+console.log(number.length);
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)
 //

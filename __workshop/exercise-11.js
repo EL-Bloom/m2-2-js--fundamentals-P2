@@ -5,9 +5,14 @@
 //
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
-function calculateAverage(grades) {
-  // grades is an array of numbers
+function calculateAverage(grades) { 
+  let average = grades.reduce(function(a, b){ 
+    return a + b;
+  });
+  
+  return Math.round(average/grades.length);
 }
+console.log(calculateAverage([50, 78, 99, 23]));
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)
 
